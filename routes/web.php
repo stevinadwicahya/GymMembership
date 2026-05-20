@@ -7,4 +7,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/api/memberships', [MembershipController::class, 'calculate']);
+
+Route::post('/api/membership', [MembershipController::class, 'register']);
